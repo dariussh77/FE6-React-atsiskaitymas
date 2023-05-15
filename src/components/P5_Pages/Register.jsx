@@ -3,6 +3,19 @@ import { useState,useEffect } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
+import styled from 'styled-components';
+const MainRegCSS=styled.main`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >form{
+        padding-right: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 500px;
+    }
+`;
 
 const Register = () => {
     const{setLoggedIn,setCurrentUser,setUsers}=useContext(UsersContext);
@@ -38,8 +51,8 @@ const Register = () => {
         }
     }
     return ( 
-        <main>
-            <h2>Prisiregistruokite</h2>
+        <MainRegCSS>
+            <h2>Prisiregistruokite:</h2>
             <form onSubmit={(e)=>fSubmit(e)}>
                 <div>
                     <label htmlFor="user">Vartotojo vardas:</label>
@@ -68,7 +81,7 @@ const Register = () => {
             {
                 failedReg&&<h1>Nesutampa slaptažodžiai</h1>
             }
-        </main>
+        </MainRegCSS>
      );
 }
  
