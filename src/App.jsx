@@ -19,7 +19,6 @@ const App=()=>{
           <Route path='/register' element={<Register/>}/>
           <Route path='/home' element={loggedIn?<Home/>:<h2>...esate neprisijungęs, kad pasiektumėte HOME puslapį</h2>}/>
           <Route path='/add' element={loggedIn?<AddStar/>:<h2>...esate neprisijungęs, kad pasiektumėte ADD puslapį</h2>}/>
-
         </Routes>
 
     </>
