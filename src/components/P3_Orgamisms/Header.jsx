@@ -15,7 +15,7 @@ const HeaderCSS=styled.header`
         gap:20px;
         a{
             text-decoration: none; 
-            color: black
+            color: black;
         }
     }
 `;
@@ -27,7 +27,6 @@ const Header = () => {
                 <li><NavLink to='/'>Login</NavLink></li>
                 <li><NavLink to='/register'>Register</NavLink></li>
             </ul>
-
         </HeaderCSS>
      );
 }

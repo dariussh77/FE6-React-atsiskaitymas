@@ -124,12 +124,12 @@
   "users":[
     {
       "id":1,
-      "userName":"admin",
+      "userName":"admin@admin.lt",
       "password":"123"
     },
     {
       "id":2,
-      "userName":"quest",
+      "userName":"quest@quest.lt",
       "password":"456"
     }
   ]
