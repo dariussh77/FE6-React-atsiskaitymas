@@ -120,5 +120,17 @@
         "alt": "Polux žvaigždėlapyje"
       }
     }
+  ],
+  "users":[
+    {
+      "id":1,
+      "userName":"admin",
+      "password":"123"
+    },
+    {
+      "id":2,
+      "userName":"quest",
+      "password":"456"
+    }
   ]
 }
