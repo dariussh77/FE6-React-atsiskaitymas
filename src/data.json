@@ -141,6 +141,11 @@
       "id": "bdad69a5-598e-44f1-8567-18125614e18f",
       "userName": "blynas@blynas.lt",
       "password": "999"
+    },
+    {
+      "id": "795f03b2-ebe4-4949-ab91-e364474468f6",
+      "userName": "kalnas@kalnas.lt",
+      "password": "kalnas"
     }
   ]
 }

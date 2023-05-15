@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
 
 const Register = () => {
-    const{setLoggedIn,setCurrentUser}=useContext(UsersContext);
+    const{setLoggedIn,setCurrentUser,setUsers}=useContext(UsersContext);
     const [failedReg,setFailedReg]=useState(false);
     const navigate=useNavigate();
     const fSubmit=(e)=>{
@@ -24,6 +24,9 @@ const Register = () => {
                                 })
                             });
             navigate('/home');
+            fetch(`http://localhost:7777/users`)
+                .then(res=>res.json())
+                .then(data=>setUsers(data));
             setCurrentUser({
                 id:uuidv4(),
                 userName:e.target.elements.user.value,

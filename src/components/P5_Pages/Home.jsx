@@ -1,7 +1,12 @@
 const Home = () => {
     return ( 
         <main>
-            NAMIAi
+            <h2>Žvaigždės:</h2>
+            <div>
+                {
+                    
+                }
+            </div>
         </main>
      );
 }
