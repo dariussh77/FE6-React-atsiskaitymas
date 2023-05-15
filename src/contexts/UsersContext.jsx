@@ -3,8 +3,10 @@ import { createContext,useState,useEffect} from "react";
 const UsersContext= createContext();
 
 const UsersProvider = ({children}) => {
-    const [loginStatus,setLoginStatus]=useState([]);
+    const [loggedIn,setLoggedIn]=useState(false);
     const [users,setUsers]=useState([]);
+    const [currentUser,setCurrentUser]=useState(null);
+
     useEffect(()=>{
         fetch(`http://localhost:7777/users`)
             .then(res=>res.json())
@@ -15,8 +17,10 @@ const UsersProvider = ({children}) => {
         value={{
             users,
             setUsers,
-            loginStatus,
-            setLoginStatus
+            loggedIn,
+            setLoggedIn,
+            currentUser,
+            setCurrentUser
         }}>
             {children}
         </UsersContext.Provider>

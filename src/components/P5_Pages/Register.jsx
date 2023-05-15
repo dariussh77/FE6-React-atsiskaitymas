@@ -1,8 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
+import { useContext } from "react";
+import UsersContext from "../../contexts/UsersContext";
 
 const Register = () => {
+    const{setLoggedIn}=useContext(UsersContext);
     const [failedReg,setFailedReg]=useState(false);
     const navigate=useNavigate();
     const fSubmit=(e)=>{
@@ -21,6 +24,7 @@ const Register = () => {
                                 })
                             });
             navigate('/');
+            setLoggedIn(true);
         }else{
             setFailedReg(true)
         }
