@@ -1,4 +1,7 @@
+import { useContext } from "react";
+import UsersContext from "../../contexts/UsersContext";
 const Register = () => {
+    const {setUsers}=useContext(UsersContext);
     return ( 
         <main>
             <h2>Prisiregistruokite</h2>
