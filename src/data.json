@@ -1,0 +1,124 @@
+{
+  "stars": [
+    {
+      "id": 1680680340702,
+      "name": "Saulė",
+      "constalation": "nepriklauso",
+      "evolutionStage": "Saulės tipo žvaigždė",
+      "mass": 1,
+      "startype": "G2V",
+      "absBright": 4.83,
+      "age": 4600,
+      "distance": 0,
+      "visBright": -27.74,
+      "coord": {
+        "rect": "netaikoma",
+        "decl": "netaikoma"
+      },
+      "photo": {
+        "src": "https://www.vle.lt/uploads/_CGSmartImage/84189_5-6a19dba5691413f120ec86940f2892de.jpg",
+        "alt": "Saulės struktūra"
+      }
+    },
+    {
+      "id": 1680680340703,
+      "name": "Betelgeizė",
+      "constalation": "Orionas",
+      "evolutionStage": "Raudonoji Gigantė",
+      "mass": 17.7,
+      "startype": "M1_M2 Ia_ab",
+      "absBright": -5.85,
+      "age": 8.5,
+      "distance": 642.5,
+      "visBright": 0.58,
+      "coord": {
+        "rect": "5h55m10s",
+        "decl": "+7.24.26"
+      },
+      "photo": {
+        "src": "https://s1.15min.lt/images/photos/2020/01/21/original/taip-betelgeize-isivaizduoja-l-calcada-piesini-sukures-pagal-eko-teleskopu-stebejimo-duomenis-5e26f77a16679.jpg",
+        "alt": "Būsima supernova Betelgeizė"
+      }
+    },
+    {
+      "id": 1680680340704,
+      "name": "Vega",
+      "constalation": "Lyra",
+      "evolutionStage": "Saulės tipo žvaigždė",
+      "mass": 2.135,
+      "startype": "A0V",
+      "absBright": 0.582,
+      "age": 455,
+      "distance": 25.05,
+      "visBright": 0.003,
+      "coord": {
+        "rect": "18h36m56s",
+        "decl": "+38.47.1"
+      },
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Size_Vega.png",
+        "alt": "Vegos ir Saulės palyginimas"
+      }
+    },
+    {
+      "id": 1680680340705,
+      "name": "Sirijus A",
+      "constalation": "Didžiojo šuns",
+      "evolutionStage": "Saulės tipo žvaigždė",
+      "mass": 2.063,
+      "startype": "A0mA1",
+      "absBright": 8.44,
+      "age": 242,
+      "distance": 8.6,
+      "visBright": -1.46,
+      "coord": {
+        "rect": "06h45m08s",
+        "decl": "-16.43.06"
+      },
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Sirius_A_and_B_Hubble_photo.jpg",
+        "alt": "Sirijus per Hubble ST"
+      }
+    },
+    {
+      "id": 1680708062937,
+      "name": "Ilgitas",
+      "constalation": "Žuvys",
+      "evolutionStage": "Juodoji skylė",
+      "mass": 1111,
+      "startype": "B14",
+      "absBright": 1,
+      "age": 55555,
+      "distance": 6978,
+      "visBright": 77,
+      "coord": {
+        "rect": "15h23m69s",
+        "decl": "-20.47.99"
+      },
+      "photo": {
+        "src": "https://www.accessscience.com/binary/mheasworks/8fd04fb536076d57/9ec085612da7162bc764b65b0ff4cd29bf0d42ec7ba271e57a8298849a76698c/654000FG0010.jpg",
+        "alt": "Žvaiždžių tipai"
+      }
+    },
+    {
+      "id": 1680708770332,
+      "name": "Poluksas",
+      "constalation": "Dvyniai",
+      "evolutionStage": "Saulės tipo žvaigždė",
+      "mass": 1.91,
+      "startype": "K0IIIb",
+      "absBright": 1.08,
+      "age": 724,
+      "distance": 3.78,
+      "visBright": 1.14,
+      "coord": {
+        "rect": "07h45m19s",
+        "decl": "+28.01.34"
+      },
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Gemini_constellation_map.svg/1024px-Gemini_constellation_map.svg.png",
+        "alt": "Polux žvaigždėlapyje"
+      }
+    }
+  ]
+}
