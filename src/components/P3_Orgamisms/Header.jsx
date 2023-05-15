@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
 const HeaderCSS=styled.header`
+    position: fixed;
+    top:0px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: antiquewhite;

@@ -7,6 +7,7 @@ import Home from './components/P5_Pages/Home';
 import AddStar from './components/P5_Pages/Add';
 import UsersContext from './contexts/UsersContext';
 import { useContext } from 'react';
+import Footer from './components/P3_Orgamisms/Footer';
 
 
 const App=()=>{
@@ -20,6 +21,7 @@ const App=()=>{
           <Route path='/home' element={loggedIn?<Home/>:<h2>...esate neprisijungęs, kad pasiektumėte HOME puslapį</h2>}/>
           <Route path='/add' element={loggedIn?<AddStar/>:<h2>...esate neprisijungęs, kad pasiektumėte ADD puslapį</h2>}/>
         </Routes>
+        {loggedIn&&<Footer/>}
 
     </>
   );
