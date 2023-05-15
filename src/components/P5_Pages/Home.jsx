@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import StarsContext from "../../contexts/StarsContext";
 import StarCard from "../P2_Molecules/StarCard";
+import UsersContext from "../../contexts/UsersContext";
 import styled from 'styled-components';
 const MainHomeCSS=styled.main`
     .allStars{
@@ -11,12 +12,13 @@ const MainHomeCSS=styled.main`
 `;
 const Home = () => {
     const {stars}=useContext(StarsContext);
+    const {users}=useContext(UsersContext);
     //console.log('stars: ', stars);
 
     return ( 
         <MainHomeCSS>
             {
-                stars[0]?
+                users[0]&&stars[0]?
                     <>
                     <h1>Žvaigždės:</h1>
                     <div className="allStars">
@@ -27,7 +29,7 @@ const Home = () => {
                             />)
                         }
                     </div>
-                    </>: <h1>...nėra įrašų</h1>
+                    </>:!stars[0]&&users[0]? <h1>...nėra įrašų</h1>: <h1>...loading</h1>
             }
         </MainHomeCSS>
      );

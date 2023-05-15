@@ -1,4 +1,4 @@
-import { createContext,useReducer, useEffect } from "react";
+import { createContext,useReducer, useEffect,useState } from "react";
 
 const StarsContext=createContext();
 const StarsAction={
@@ -29,7 +29,7 @@ const StarsProvider = ({children}) => {
             .then(data=>setStars({
                 type:StarsAction.get,
                 stars:data
-            }))
+            }));
     },[]);
     return ( 
         <StarsContext.Provider
