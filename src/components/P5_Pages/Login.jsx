@@ -24,27 +24,31 @@ const Login = () => {
     };
     return ( 
         <main>
-            <h1>Prisijunkite:</h1>
-            <form onSubmit={(e)=>fSubmit(e)}>
-                <div>
-                    <label htmlFor="user">Vartotojo vardas:</label>
-                    <input 
-                        type="email" 
-                        name="user" id="user"
-                        placeholder="pavyzdys@pavyzdys.com" 
-                    />
-                </div>
-                <div>
-                    <label htmlFor="password">Slaptažodis:</label>
-                    <input 
-                        type="password" 
-                        name="password" id="password"
-                    />
-                </div>
-                <input type="submit" value='Prisijungti' />
-            </form>
             {
-                failedIn&&<h2>Neteisingi kredencialai</h2>
+                users[0]?
+                <>
+                    <h1>Prisijunkite:</h1>
+                    <form onSubmit={(e)=>fSubmit(e)}>
+                        <div>
+                            <label htmlFor="user">Vartotojo vardas:</label>
+                            <input 
+                                type="email" 
+                                name="user" id="user"
+                                placeholder="pavyzdys@pavyzdys.com" 
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="password">Slaptažodis:</label>
+                            <input 
+                                type="password" 
+                                name="password" id="password"
+                            />
+                        </div>
+                        <input type="submit" value='Prisijungti' />
+                    </form>
+                    {failedIn&&<h2>Neteisingi kredencialai</h2>}
+                </> :
+                <h1>...loading</h1>          
             }
         </main>
      );
