@@ -11,7 +11,7 @@ const FooterCSS=styled.footer`
 const Footer = () => {
     return ( 
         <FooterCSS>
-            All right reserved @
+            All rights reserved @
         </FooterCSS>
      );
 }

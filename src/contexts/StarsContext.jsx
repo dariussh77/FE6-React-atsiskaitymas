@@ -9,6 +9,15 @@ const StarsAction={
 const reducer=(state,action)=>{
     switch (action.type){
         case StarsAction.get: return action.stars;
+        case StarsAction.add: 
+            fetch(`http://localhost:7777/stars`, {
+                method: "POST", 
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body: JSON.stringify(action.data)
+                });
+                return [...state, action.data];
         default: return state;
     }
 }
@@ -25,7 +34,9 @@ const StarsProvider = ({children}) => {
     return ( 
         <StarsContext.Provider
         value={{
-            stars
+            stars,
+            StarsAction,
+            setStars
         }}>
             {children}
         </StarsContext.Provider>

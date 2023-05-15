@@ -15,15 +15,20 @@ const Home = () => {
 
     return ( 
         <MainHomeCSS>
-            <h2>Žvaigždės:</h2>
-            <div className="allStars">
-                {
-                    stars.map(star=><StarCard
-                        key={star.id}
-                        star={star}
-                    />)
-                }
-            </div>
+            {
+                stars[0]?
+                    <>
+                    <h1>Žvaigždės:</h1>
+                    <div className="allStars">
+                        {
+                            stars.map(star=><StarCard
+                                key={star.id}
+                                star={star}
+                            />)
+                        }
+                    </div>
+                    </>: <h1>...nėra įrašų</h1>
+            }
         </MainHomeCSS>
      );
 }

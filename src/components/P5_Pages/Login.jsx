@@ -10,7 +10,7 @@ const Login = () => {
         e.preventDefault();
 //        console.log('e: ', e);
         users.map(el=>{
-            console.log('el: ', el);
+            //console.log('el: ', el);
             if(e.target.elements.user.value===el.userName && e.target.elements.password.value===el.password){
                 setCurrentUser(el);
                 setLoggedIn(true);

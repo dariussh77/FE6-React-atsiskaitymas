@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
 const HeaderCSS=styled.header`
-    position: fixed;
+    position: sticky;
+    padding: 10px;
     top:0px;
-    width: 100%;
+    width: calc(100%-20px);
     display: flex;
     justify-content: space-between;
     background-color: antiquewhite;
+    height: 60px;
     >img{
         height: 50px;
         width: 50px;
@@ -33,7 +35,7 @@ const Header = () => {
     return ( 
         <HeaderCSS>
             <img src="https://pbs.twimg.com/profile_images/435931025458593792/OXByHB12_400x400.jpeg" alt="Čia Aš" />
-            {currentUser&&<h4>vartotojas:{currentUser.userName}</h4>}
+            {currentUser&&<h4>Vartotojas: <i>{currentUser.userName}</i></h4>}
             {
                 !loggedIn
                     ?<ul>
