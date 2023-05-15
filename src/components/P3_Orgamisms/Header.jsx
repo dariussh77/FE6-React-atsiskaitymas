@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
+import { useContext } from "react";
+import UsersContext from "../../contexts/UsersContext";
 const HeaderCSS=styled.header`
     display: flex;
     justify-content: space-between;
@@ -20,9 +22,11 @@ const HeaderCSS=styled.header`
     }
 `;
 const Header = () => {
+    const {currentUser}=useContext(UsersContext);
     return ( 
         <HeaderCSS>
             <img src="https://pbs.twimg.com/profile_images/435931025458593792/OXByHB12_400x400.jpeg" alt="Čia Aš" />
+            {currentUser&&<h4>vartotojas:{currentUser.userName}</h4>}
             <ul>
                 <li><NavLink to='/'>Login</NavLink></li>
                 <li><NavLink to='/register'>Register</NavLink></li>

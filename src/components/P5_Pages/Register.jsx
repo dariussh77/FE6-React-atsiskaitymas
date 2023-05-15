@@ -5,7 +5,7 @@ import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
 
 const Register = () => {
-    const{setLoggedIn}=useContext(UsersContext);
+    const{setLoggedIn,setCurrentUser}=useContext(UsersContext);
     const [failedReg,setFailedReg]=useState(false);
     const navigate=useNavigate();
     const fSubmit=(e)=>{
@@ -23,7 +23,12 @@ const Register = () => {
                                     password:e.target.elements.password.value
                                 })
                             });
-            navigate('/');
+            navigate('/home');
+            setCurrentUser({
+                id:uuidv4(),
+                userName:e.target.elements.user.value,
+                password:e.target.elements.password.value
+            });
             setLoggedIn(true);
         }else{
             setFailedReg(true)
