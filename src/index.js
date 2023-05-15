@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { UsersProvider } from './contexts/UsersContext';
+import { StarsProvider } from './contexts/StarsContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <UsersProvider>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    </UsersProvider>
+    <StarsProvider>
+        <UsersProvider>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </UsersProvider>
+    </StarsProvider>
 );
